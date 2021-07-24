@@ -40,14 +40,18 @@ In our first application, index() method is mapped as root of our application. T
 
 config = AppConfig(minimal = True, root_controller = MyController())
 
-# The make_wsgi_app() function here constructs application object.
+The make_wsgi_app() function here constructs application object.
+
 application = config.make_wsgi_app()
 
-# In order to serve this application, we  need to start the HTTP server. 
-# You can use simple_server module in wsgiref package to set up and start it.  
-# # from wsgiref.simple_server import make_server
+In order to serve this application, we  need to start the HTTP server. 
 
-# This module has make_server() method which requires port number and application object as arguments.
+You can use simple_server module in wsgiref package to set up and start it.  
+
+from wsgiref.simple_server import make_server
+
+This module has make_server() method which requires port number and application object as arguments.
+
 server = make_server('', 8080, application)
 server.serve_forever()
       
@@ -101,14 +105,23 @@ Python setup.py develop
 By default, following dependencies are installed at the time of project set up −
 
 Beaker
+
 Genshi
+
 zope.sqlalchemy
+
 sqlalchemy
+
 alembic
+
 repoze.who
+
 tw2.forms
+
 tgext.admin ≥ 0.6.1
+
 WebHelpers2
+
 babel
 
 After installation, start serving the project on development server by issuing following command in shell −
@@ -118,5 +131,7 @@ Gearbox serve -–reload -–debug
 This sample application gives a brief introduction about TurboGears framework itself.
 
 Thank you for reading till the end.
+
 Peace out, 
+
 Bek 
