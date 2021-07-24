@@ -1,6 +1,8 @@
 <h1> TurboGears2 ⚙️ Full-Stack Framework for Python </h1> 
 
-A quick introduction about TurboGears2 , a full-stack framework for Python
+Hello friend,
+
+This is a quick introduction about TurboGears2 , a full-stack framework for Python
 
 
 TurboGears is a full-stack framework, a battery-included framework in other workds ..actually this is TurboGears 2 which
